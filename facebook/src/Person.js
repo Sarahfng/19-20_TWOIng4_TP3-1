@@ -21,8 +21,14 @@ class Person extends React.Component{
         this.state={profil : this.props.profil, color:"yellow"};
     }
 
+
     handleChange = (event) => {
-        this.setState({ [event.target.name] :"blue"})
+        if(this.state.color == "yellow"){
+            this.setState({ [event.target.name] : this.state.profil.background});
+        }
+        else{
+            this.setState({ [event.target.name] :"yellow"});
+        }
     }
 
     render(){
@@ -35,7 +41,7 @@ class Person extends React.Component{
                         <CardText >Prenom : {this.state.profil.prenom}</CardText>
                         <CardText>Nom : {this.state.profil.nom}</CardText>
                         <CardText>Date de Naissance : {this.state.profil.date}</CardText>
-                        <Button onClick={this.handleChange} name="color">Change Style</Button>
+                        <Button className="ButtonStyle" onClick={this.handleChange} name="color">Change Style</Button>
                     </CardBody>
                 </div>
             </Card>

@@ -4,10 +4,10 @@ export default [
         nom: "bob",
         prenom:"hg",
         date:"hg",
-        img:"hg",
+        img:"tomholland.jpg",
         like:0,
         description:"hjghjk",
-        background:"hgf"
+        background:"red"
     },
     {
         id:1,
@@ -17,7 +17,7 @@ export default [
         img:"jhg",
         like:0,
         description:"hjghjk",
-        background:"jhg"
+        background:"blue"
     },
     {
         id:2,
@@ -27,6 +27,6 @@ export default [
         img:"hgf",
         like:0,
         description:"hjghjk",
-        background:"gtr"
+        background:"green"
     }
 ];

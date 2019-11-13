@@ -32,7 +32,7 @@ class Description extends React.Component{
                     <CardBody>
                         <CardText>Description : {this.state.profil.description}</CardText>
                         <CardText>Like : {this.state.profil.like}</CardText>
-                        <Button onClick={() => this.addLike()}> C'est Super !  </Button>
+                        <Button className="ButtonStyle" onClick={() => this.addLike()}> C'est Super !  </Button>
                     </CardBody>
                 </Card>
             </div>

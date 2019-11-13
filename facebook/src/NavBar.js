@@ -23,11 +23,11 @@ class NavBar extends React.Component{
 
     render(){
         return(
-            <navbar color="light" >
-                <Button outline color="secondary" size="lg">{this.state.profils[0].prenom}</Button>{' '}
-                <Button outline color="secondary" size="lg">{this.state.profils[1].prenom}</Button>{' '}
-                <Button outline color="secondary" size="lg">{this.state.profils[2].prenom}</Button>{' '}
-            </navbar>
+            <div className="NavBarButton" >
+                <Button outline color="secondary" size="lg" className="float right" >{this.state.profils[1].prenom}</Button>{' '}
+                <Button outline color="secondary" size="lg"  className="float right">{this.state.profils[1].prenom}</Button>{' '}
+                <Button outline color="secondary" size="lg"  className="float right">{this.state.profils[2].prenom}</Button>{' '}
+            </div>
 
         )
     }
