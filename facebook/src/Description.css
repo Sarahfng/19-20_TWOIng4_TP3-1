@@ -1,0 +1,11 @@
+.infos{
+    max-width: 900px;
+    background-color:  red;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+CardBody{
+    text-align : left;
+}

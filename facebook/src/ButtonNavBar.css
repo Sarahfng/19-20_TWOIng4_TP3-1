@@ -1,0 +1,18 @@
+#Button {
+    margin-left : 20px;
+    margin-right : 20px;
+    background-color: #FFFFFF;
+    color: #368ABF;
+}
+#Button
+{
+    margin-left : 20px;
+    margin-right : 20px;
+    background-color: #368ABF;
+    color: #FFFFFF;
+}
+#Button:hover
+{
+    background-color: #368ABF;
+    color: #FFFFFF;
+}

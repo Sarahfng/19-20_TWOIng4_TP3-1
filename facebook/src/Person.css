@@ -1,0 +1,21 @@
+.profil{
+    max-width: 900px;
+    border-radius: 10px;
+    margin : auto;
+    background-color: blue;
+
+}
+
+img{
+    border-radius: 50%;
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width:30%;
+}
+
+.infosPerson{
+    width: 900px;
+    border-radius: 10px;
+    margin : auto;
+}
