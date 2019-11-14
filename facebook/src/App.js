@@ -5,24 +5,38 @@ import Card from "./Card";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import DataBase from "./DataBase";
 import NavBar from "./NavBar";
+import { Button } from 'reactstrap';
 
 class App extends React.Component{
     constructor(props){
         super(props);
-        this.state = {profils : DataBase};
+        this.state = {personCo :0};
+        this.handleChange=this.handleChange.bind(this);
     }
+
+    handleChange = (newPersonCo) => {
+        this.setState(state => ({
+                personCo:newPersonCo,
+            })
+        );
+    }
+
+
+
 
   render(){
     return(
         <div>
             <section>
-            <NavBar profils={this.state.profils}/>
+                <div className="NavBarButton" >
+                    <Button outline color="secondary" size="lg" onClick={(newPersonCo) => this.handleChange(0)} >{DataBase[0].prenom}</Button>
+                    <Button outline color="secondary" size="lg" onClick={(newPersonCo) => this.handleChange(1)}>{DataBase[1].prenom}</Button>
+                    <Button outline color="secondary" size="lg" onClick={(newPersonCo) => this.handleChange(2)}>{DataBase[2].prenom}</Button>
+                </div>
             </section>
 
             <section>
-                <Card profil={this.state.profils[0]}></Card>
-                <Card profil={this.state.profils[1]}></Card>
-                <Card profil={this.state.profils[2]}></Card>
+                <Card profil={DataBase[this.state.personCo]}></Card>
             </section>
         </div>
     )

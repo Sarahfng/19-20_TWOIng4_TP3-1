@@ -1,32 +1,32 @@
 export default [
     {
-        id:0,
-        nom: "bob",
-        prenom:"hg",
-        date:"hg",
-        img:"tomholland.jpg",
-        like:0,
+        nom: "Holland",
+        prenom:"Tom",
+        date:"1 juin 1996",
+        img:"./tomholland.jpg",
+        like:4,
         description:"hjghjk",
-        background:"red"
+        background:"palevioletred",
+        logged: false
     },
     {
-        id:1,
         nom: "martine",
         prenom:"hg",
         date:"hg",
         img:"jhg",
         like:0,
         description:"hjghjk",
-        background:"blue"
+        background:"cornflowerblue",
+        logged: false
     },
     {
-        id:2,
         nom: "bob",
         prenom:"jhg",
         date:"hgf",
         img:"hgf",
         like:0,
         description:"hjghjk",
-        background:"green"
+        background:"mediumseagreen",
+        logged: false
     }
 ];

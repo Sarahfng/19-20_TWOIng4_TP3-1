@@ -18,29 +18,29 @@ class Person extends React.Component{
             like: this.props.like,
             background: this.props.background
         };*/
-        this.state={profil : this.props.profil, color:"yellow"};
+        this.state={color:"antiquewhite"};
     }
 
-
     handleChange = (event) => {
-        if(this.state.color == "yellow"){
-            this.setState({ [event.target.name] : this.state.profil.background});
+        if(this.state.color == "antiquewhite"){
+            this.setState({ [event.target.name] : this.props.profil.background});
         }
         else{
-            this.setState({ [event.target.name] :"yellow"});
+            this.setState({ [event.target.name] :"antiquewhite"});
         }
     }
 
     render(){
+        console.log(this.props.profil);
     return (
         <div className="profil">
             <Card>
                 <div className="infosPerson" style={{backgroundColor:this.state.color}}>
                     <img src={Test} alt="Card image cap" />
                     <CardBody>
-                        <CardText >Prenom : {this.state.profil.prenom}</CardText>
-                        <CardText>Nom : {this.state.profil.nom}</CardText>
-                        <CardText>Date de Naissance : {this.state.profil.date}</CardText>
+                        <CardText >Prenom : {this.props.profil.prenom}</CardText>
+                        <CardText>Nom : {this.props.profil.nom}</CardText>
+                        <CardText>Date de Naissance : {this.props.profil.date}</CardText>
                         <Button className="ButtonStyle" onClick={this.handleChange} name="color">Change Style</Button>
                     </CardBody>
                 </div>

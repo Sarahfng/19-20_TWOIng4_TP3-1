@@ -5,6 +5,7 @@ import Button from "./ButtonNavBar";
 import Person from "./Person";
 import Description from "./Description";
 import './Card.css';
+import DataBase from "./DataBase";
 
 class Card extends React.Component{
     constructor(props){
@@ -18,14 +19,14 @@ class Card extends React.Component{
             like: this.props.profil.like,
             background: this.props.profil.background
         };*/
-        this.state={profil : this.props.profil};
     }
 
     render(){
+
         return(
             <div className="carte">
-                <Person profil={this.state.profil}/>
-                <Description profil={this.state.profil}/>
+                <Person profil={this.props.profil}/>
+                <Description profil={this.props.profil}/>
             </div>
         )
     }

@@ -21,9 +21,12 @@ class Description extends React.Component{
         this.state={profil : this.props.profil};
     }
 
-    addLike(){
-        this.state.profil.like = this.state.profil.like + 1;
-    }
+    /*addLike = (this.prop.profil.like) => {
+        this.setState( this.prop.profil.like =>{ return {like : this.state.profil.like + 1}});
+
+    }*/
+
+
 
     render(){
         return (
@@ -32,7 +35,7 @@ class Description extends React.Component{
                     <CardBody>
                         <CardText>Description : {this.state.profil.description}</CardText>
                         <CardText>Like : {this.state.profil.like}</CardText>
-                        <Button className="ButtonStyle" onClick={() => this.addLike()}> C'est Super !  </Button>
+                        <Button className="ButtonStyle" onClick={this.addLike} > C'est Super !  </Button>
                     </CardBody>
                 </Card>
             </div>
