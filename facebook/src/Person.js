@@ -4,6 +4,8 @@ import {
     CardTitle, CardSubtitle, Button
 } from 'reactstrap';
 import Test from './tomholland.jpg';
+import Photo2 from './tomholland.jpg';
+import Photo3 from './tomholland.jpg';
 import './Person.css';
 
 class Person extends React.Component{

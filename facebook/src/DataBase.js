@@ -1,32 +1,33 @@
+import Photo1 from './tomholland.jpg';
+import Photo2 from './sf.jpg';
+import Photo3 from './tomholland.jpg';
+
 export default [
     {
         nom: "Holland",
         prenom:"Tom",
         date:"1 juin 1996",
-        img:"./tomholland.jpg",
+        img:"Photo1",
         like:4,
         description:"hjghjk",
-        background:"palevioletred",
-        logged: false
+        background:"palevioletred"
     },
     {
-        nom: "martine",
-        prenom:"hg",
-        date:"hg",
-        img:"jhg",
+        nom: "Stone",
+        prenom:"Emma",
+        date:"6 novembre 1988",
+        img:"Photo2",
         like:0,
-        description:"hjghjk",
-        background:"cornflowerblue",
-        logged: false
+        description:"Oscar de la meilleure actrice!",
+        background:"cornflowerblue"
     },
     {
-        nom: "bob",
-        prenom:"jhg",
-        date:"hgf",
-        img:"hgf",
+        nom: "Marceau",
+        prenom:"Sophie",
+        date:"17 novembre 1966",
+        img:"Photo3",
         like:0,
-        description:"hjghjk",
-        background:"mediumseagreen",
-        logged: false
+        description:"Vedette du film La Boum !",
+        background:"mediumseagreen"
     }
 ];
