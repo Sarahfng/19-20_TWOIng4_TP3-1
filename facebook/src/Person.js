@@ -38,7 +38,7 @@ class Person extends React.Component{
         <div className="profil">
             <Card>
                 <div className="infosPerson" style={{backgroundColor:this.state.color}}>
-                    <img src={Test} alt="Card image cap" />
+                    <img src={this.props.profil.img} alt="Card image cap" />
                     <CardBody>
                         <CardText >Prenom : {this.props.profil.prenom}</CardText>
                         <CardText>Nom : {this.props.profil.nom}</CardText>
